@@ -11,11 +11,18 @@ class App extends Component {
     }
   }
   handleChange = id => {
-    console.log("Значение поменялось", id);
+    const index = this.state.todoItems.map(item => item.id).indexOf(id);
+    this.setState( state =>{
+      let {todoItems} = state;
+      todoItems[index].completed = true
+      return todoItems;
+    })
   }
   render(){
     const{todoItems} = this.state;
-    const activeTasks = todoItems.map(item =>{
+    const activeTasks = todoItems.filter(task => task.completed === false);
+    const completedTasks = todoItems.filter(task => task.completed === true);
+    const finalTasks = [...activeTasks,...completedTasks].map(item => {
       return (
         <ToDoItem
           key={item.id} //ключ для списка
@@ -27,7 +34,9 @@ class App extends Component {
     })
     return (
       <div className="App">
-        {activeTasks}
+        <h1 className='title'>Какие планы на день?</h1>
+        <h2 className='titleBloc'>Задачи</h2>
+        {finalTasks}
       </div>
     );
   }
