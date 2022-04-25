@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './AllToDoItem.css';
 import ToDoItem from './ToDoltem/ToDoltem.js';
 import todosData from './todosData.js';
 
@@ -34,8 +34,8 @@ class App extends Component {
     })
     return (
       <div className="App">
-        <h1 className='title'>Какие планы на день?</h1>
-        <h2 className='titleBloc'>Задачи</h2>
+        <h1 className='title'>ToD0 List</h1>
+        <h2 className='titleBloc'>Tasks</h2>
         {finalTasks}
       </div>
     );
@@ -43,5 +43,15 @@ class App extends Component {
 }
 
 export default App;
+ // return (
+    //     <View>
+    //         <Header />
+    //         <View>
+    //             <Flatlist data={listOfItems} renderItem={({ item }) => (
+    //              <Text>{item.text}</Text>
+    //             )} />
+    //         </View>
+    //     </View>
+    // )
 
 
