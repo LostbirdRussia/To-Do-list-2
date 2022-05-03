@@ -39,13 +39,4 @@ export default todosData;
 
 
 
-    // return (
-    //     <View>
-    //         <Header />
-    //         <View>
-    //             <Flatlist data={listOfItems} renderItem={({ item }) => (
-    //              <Text>{item.text}</Text>
-    //             )} />
-    //         </View>
-    //     </View>
-    // )
+   

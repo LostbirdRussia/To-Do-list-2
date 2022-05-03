@@ -23,6 +23,13 @@ const ToDoItem = props => {
                        {props.description}
                     </p> 
                 </div>
+                {/* <div       
+        <input
+        type={text}
+        value={name}
+        onChange={e => setName(e.target.value)}
+        placeholder="Введи имя нового таска"
+        /> */}
            </div>
     )
 }
