@@ -39,14 +39,28 @@ h2 {
 
 
 
+.description-wrapper{
+  font-size: 14px;
+  text-align: center;
+ }
 
 
+ .task-input {
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 20%;
+  border-width: 1px;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 35%;
+  
+ }
 
-
-
-
-
-
-
-
-
+ .task-inputc-heckbox {
+  border-radius: 10px;
+  text-align: center;
+ 
+ }
